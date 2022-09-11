@@ -1,0 +1,191 @@
+      body {
+         margin:0;
+         width:contain;
+         padding:0;
+     }
+
+
+
+
+
+      
+      .car1 {
+            width:110px;
+            height:30px;
+            background:darkred;
+            position:absolute;
+            top:76vh;
+        border-radius:4px 4px 5px 0px;
+        left:-5px;
+        animation-name:car;
+            animation-duration:5s;
+            animation-timing-function:linear;
+            animation-iteration-count:infinite;
+            animation-delay:0.5s;
+            
+      }  
+        
+         
+      .car2 {
+            width:60px;
+            height:30px;
+            background:darkred;
+            position:absolute;
+            top:71vh;
+            left:7px;
+            border-radius:10px 10px 0px 0px;
+            animation-name:car;
+            animation-duration:5s;
+            animation-timing-function:linear;
+            animation-iteration-count:infinite;
+     animation-delay:0.5s;
+     
+     
+      }  
+        
+        
+        .window {
+        width:50px;
+            height:20px;
+            background:lightgray;
+        transform: translateY(3px) translateX(6px);
+            border:1px solid black;
+            text-align:center;
+            
+            border-radius:10px 10px 0px 0px;
+            
+           }
+        
+        
+       
+        
+        
+        
+        
+        
+        
+        .tire {
+            border-radius:50%;
+            width:20px;
+            height:20px;
+            border:5px solid black;
+            background:radial-gradient(grey, lightgrey);
+            position:absolute;
+            
+            top:80vh;
+            animation-name:roll3;
+            animation-duration:5s;
+            animation-timing-function:linear;
+            
+            animation-iteration-count:infinite;
+            animation-delay:0.5s;
+        }
+        
+         .tire2 {
+            border-radius:50%;
+            width:20px;
+            height:20px;
+            border:5px solid black;
+            background:radial-gradient(grey, lightgrey);
+            position:absolute;
+            transform:translateX(20vw);
+            top:80vh;
+            animation-name:roll2;
+            animation-duration:5s;
+            animation-timing-function:linear;
+            animation-iteration-count:infinite;
+            animation-delay:0.5s;
+        }
+        
+         
+        @keyframes roll2 {
+            100% {transform:rotate(360deg); transform:translateX(1550px)}
+        
+        }
+        
+        
+        @keyframes roll3 {
+            100% {transform:rotate(360deg); transform:translateX(1500px)
+            }
+            
+            }
+            
+         @keyframes car {
+             100% {transform:translate(1500px)}
+         }   
+        
+        
+        
+        body {
+            margin:0;
+            padding:0;
+            width:contain;
+        }
+        
+        .sky {
+            width:100vw;
+            height:50vh;
+            background:deepskyblue;
+        }
+        
+        .road {
+            width:100vw;
+            height:20vh;
+            background:dimgray;
+            border:1px solid gray;
+        }
+        
+        .con {
+            position:absolute;
+            top:-140px;
+        }
+        
+       .sun {
+           width:60px;
+           height:60px;
+           border-radius:50%;
+           background:orange;
+           position:absolute;
+           top:20px;
+           left:20px;
+           box-shadow:4px 4px 20px 2px orange, -4px -4px 20px 2px orange;
+           border:none;
+           
+           
+       } 
+        
+        .grass {
+        
+            width:100vw;
+            height:30vh;
+            background:darkgreen;
+        }
+        
+        
+        .roadlines {
+            border:2px dashed white;
+            transform:translateY(10vh)
+            
+            
+        }
+        
+        .windowline {
+             width:20px;
+             height:1px;
+            transform:rotateZ(90deg) translateY(-15px) translateX(9px);
+            border:1px solid black;
+            background:black;
+        }
+        
+        .line {
+            border:1px solid black;
+        }
+        
+        .doorline {
+            width:35px;
+            border:0.5px solid black;
+            transform:rotateZ(90deg) translateY(-28px) translateX(10px);
+            position:absolute;
+            z-index:10;
+        }
+        
